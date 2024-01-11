@@ -36,11 +36,13 @@ helm plugin list
 
 echo "Logging into kubernetes cluster $CLUSTER_NAME"
 if [ -n "$CLUSTER_ROLE_ARN" ]; then
+    echo "   using role-arn ${CLUSTER_ROLE_ARN}"
     aws eks \
         --region ${AWS_REGION} \
         update-kubeconfig --name ${CLUSTER_NAME} \
         --role-arn=${CLUSTER_ROLE_ARN}
 else
+    echo "   using plain old update kubeconfig"
     aws eks \
         --region ${AWS_REGION} \
         update-kubeconfig --name ${CLUSTER_NAME}
