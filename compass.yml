@@ -1,0 +1,14 @@
+name: github-actions-deploy-eks-helm
+id: ari:cloud:compass:7ab74c8c-cdc7-47b4-ac42-498142383c41:component/e7890024-d21a-491e-8eed-88aeb93717f5/8e606fa7-584e-4500-83ce-110ce59a9f83
+description: null
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links: []
+relationships:
+  DEPENDS_ON: []
+labels:
+  - language:shell
+  - source:github
+customFields: null
